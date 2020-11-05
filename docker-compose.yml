@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: con_service_user
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    image: app_service_user:1.0
+    ports:
+      - "5000:5000"
